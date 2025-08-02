@@ -1,0 +1,68 @@
+body {
+    background-color: #2f4858;
+}
+
+.header {
+    display:flex;
+    border: 4px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-child {
+    border: 1px solid purple;
+  }
+
+#logo {
+    float: left;
+    width: 30%;
+}
+
+#buttons {
+    float: right;
+    width: 70%;
+    display:flex;
+    justify-content: right;
+}
+
+.navbutton {
+
+  width: 150px;
+  height: 75px;
+  background: #295f71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.navbutton::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg, 
+      transparent, 
+      transparent 30%, 
+      rgba(27,145,144,0.5)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  
+  .navbutton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(27,145,144,0.5);
+  }
+  
+  .navbutton:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
