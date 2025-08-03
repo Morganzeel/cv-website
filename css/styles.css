@@ -4,17 +4,14 @@ body {
 
 .header {
     display:flex;
-    border: 2px solid #1b9190;
+    border: 2px solid rgba(27,145,144,0.3);
     justify-content: center;
     align-items: center;
     background-color: #2D5060;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+    margin: 20px;
 }
-
-.header-child {
-  border: 1px solid purple;
-  }
 
 #logo-cont {
     float: left;
@@ -31,27 +28,31 @@ body {
   margin-right: 20px;
 }
 
+.navname {
+  color:#f1fcf6;
+}
+
 #buttons {
-    flex-grow: 3;
+    flex-grow: 2;
     float: right;
     display:flex;
     justify-content: right;
 }
 
 .navbutton {
-
   width: 150px;
   height: 75px;
   background: #295f71;
+  color:#f1fcf6;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  border-radius: 15px;
   transition: all 0.5s ease;
   margin:5px;
   border-radius: 50px;
+  margin: 5px;
 }
 
 .navbutton::before {
@@ -74,7 +75,7 @@ body {
   
   .navbutton:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(27,145,144,0.5);
+    box-shadow: 0 0 10px rgba(27,145,144,0.5);
   }
   
   .navbutton:hover::before {
@@ -85,3 +86,6 @@ body {
   .hide {
     opacity: 0;
   }
+
+  @font-face { font-family: Raela; src: url('../fonts/RaelaGrotesqueRegular-e9476.ttf'); }
+  .Raela { font-family: Raela; font-size: 2em;} 
