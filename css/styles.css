@@ -1,7 +1,7 @@
 body {
     background-color: #2f4858;
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .header {
@@ -13,26 +13,36 @@ body {
     border-radius: 1.5vh;
     padding: 0.5vh;
     margin-top: 0.5vh;
+    margin-bottom: 6vh;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 6vh;
-    width: 80vw;
+    width: 95%;
     max-height: 20vh;
 }
 
 #logo-cont {
     float: left;
     max-width: 15vw;
+    min-width: 10vw;
+    min-height: 15vh;
     max-height: 15vh;
     overflow:hidden;
 }
 
 .logo {
   zoom:0.6;
+  height: 25vh;
+  width: 20vw;
   display: inline-block;
   vertical-align: top;
   object-fit: contain;
-  margin-right: 0.5vw;
+}
+
+.logo2 {
+  zoom:0.6;
+  display: inline-block;
+  vertical-align: top;
+  object-fit: contain;
 }
 
 .navname {
@@ -48,7 +58,9 @@ body {
 }
 
 .navbutton {
-  width: 8vw;
+  max-width: 10vw;
+  min-width: 10vh;
+  font-size: 2vh;
   height: 7vh;
   background: #295f71;
   color:#f1fcf6;
@@ -111,7 +123,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 70vw;
-    height: 80vh;
+    height: 100%;
+    gap: 2vh;
     border: 0.15em solid rgba(27,145,144,0.3);
     background-color: #2D5060;
     border-radius: 1.5vh;
@@ -130,7 +143,10 @@ body {
   .Argh {font-family: Aaargh; color: #f1fcf6; text-decoration: none;}
 
   .aboutme-title {
-    font-size: 5vh;
+    font-size: 4vh;
+    min-height: 4vh;
+    min-height: 4vh;
+    object-fit: contain;
   }
 
   .aboutme-text {
@@ -140,12 +156,15 @@ body {
   }
 
   .aboutme-logo {
-    max-width: 15vw;
-    max-height: 20vh;
-    overflow:hidden;
+    max-width: 45vw;
+    min-width: 10vw;
+    max-height: 25vh;
+    min-height: 25vh;
+    overflow: hidden;
   }
 
   .contact-icons {
     max-width: 20vw;
     max-height: 20vh;
+    display: flex;
   }
