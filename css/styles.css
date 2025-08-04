@@ -6,7 +6,7 @@ body {
 
 .header {
     display:flex;
-    border: 0.15em solid rgba(27,145,144,0.3);
+    border: 0.3vh solid rgba(27,145,144,0.3);
     justify-content: center;
     align-items: center;
     background-color: #2D5060;
@@ -36,17 +36,22 @@ body {
   display: inline-block;
   vertical-align: top;
   object-fit: contain;
+  margin-left: 0.2vh;
 }
 
 .logo2 {
-  zoom:0.6;
+  max-height: 20vh;
   display: inline-block;
   vertical-align: top;
   object-fit: contain;
 }
 
-.navname {
-  color:#f1fcf6;
+.logo3 {
+  height: 10vh;
+  width: 5vw;
+  display: inline-block;
+  object-fit: contain;
+  margin-bottom: 2vh;
 }
 
 .buttons {
@@ -161,10 +166,13 @@ body {
     max-height: 25vh;
     min-height: 25vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
   }
 
   .contact-icons {
     max-width: 20vw;
     max-height: 20vh;
     display: flex;
+    align-items: center;
   }
