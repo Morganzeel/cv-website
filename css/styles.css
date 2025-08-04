@@ -46,14 +46,6 @@ body {
   object-fit: contain;
 }
 
-.logo3 {
-  height: 10vh;
-  width: 5vw;
-  display: inline-block;
-  object-fit: contain;
-  margin-bottom: 2vh;
-}
-
 .buttons {
     max-height: 15vh;
     flex-grow: 2;
@@ -166,13 +158,6 @@ body {
     max-height: 25vh;
     min-height: 25vh;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-  }
-
-  .contact-icons {
-    max-width: 20vw;
-    max-height: 20vh;
     display: flex;
     align-items: center;
   }
