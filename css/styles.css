@@ -1,5 +1,7 @@
 body {
     background-color: #2f4858;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 .header {
@@ -8,16 +10,20 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #2D5060;
-    border-radius: 1.5em;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 6em;
+    border-radius: 1.5vh;
+    padding: 0.5vh;
+    margin-top: 0.5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6vh;
+    width: 80vw;
+    max-height: 20vh;
 }
 
 #logo-cont {
     float: left;
-    max-width: 9em;
-    max-height: 7em;
+    max-width: 15vw;
+    max-height: 15vh;
     overflow:hidden;
 }
 
@@ -26,7 +32,7 @@ body {
   display: inline-block;
   vertical-align: top;
   object-fit: contain;
-  margin-right: 0.5em;
+  margin-right: 0.5vw;
 }
 
 .navname {
@@ -34,6 +40,7 @@ body {
 }
 
 #buttons {
+    max-height: 15vh;
     flex-grow: 2;
     float: right;
     display:flex;
@@ -41,8 +48,8 @@ body {
 }
 
 .navbutton {
-  width: 9em;
-  height: 5em;
+  width: 8vw;
+  height: 7vh;
   background: #295f71;
   color:#f1fcf6;
   display: flex;
@@ -51,8 +58,8 @@ body {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
-  margin: 0.3em;
-  border-radius: 3em;
+  margin: 0.3vw;
+  border-radius: 1.5em;
 }
 
 .navbutton::before {
@@ -83,13 +90,6 @@ body {
     transform: rotate(-45deg) translateY(100%);
   }
 
-  .hide {
-    opacity: 0;
-  }
-
-  @font-face { font-family: Raela; src: url('../fonts/RaelaGrotesqueRegular-e9476.ttf'); }
-  .Raela { font-family: Raela; font-size: 2em;} 
-
   .fade-in {
     opacity: 1;
     animation-name: fadeInOpacity;
@@ -110,11 +110,31 @@ body {
   .aboutme {
     display: flex;
     flex-direction: column;
-    width: 110em;
-    height: 50em;
+    width: 70vw;
+    height: 80vh;
     border: 0.15em solid rgba(27,145,144,0.3);
     background-color: #2D5060;
-    border-radius: 1.5em;
-    justify-content: center;
-    margin:auto;
+    border-radius: 1.5vh;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  @font-face { font-family: Abel; src: url('../fonts/abel-regular-webfont.woff'); }
+  .Abel { font-family: Abel; font-size: 2em;} 
+
+  @font-face { font-family: AlexBrush; src: url('../fonts/AlexBrush-Regular.ttf'); }
+  .AlexBrush { font-family: AlexBrush; color: #f1fcf6;} 
+
+  @font-face { font-family: Aaargh; src: url('../fonts/Aaargh-webfont.woff'); }
+  .Argh {font-family: Aaargh; color: #f1fcf6}
+
+  .aboutme-title {
+    font-size: 5vh;
+  }
+
+  .aboutme-text {
+    font-size: 2.5vh;
+    color: #f1fcf6;
+    text-align: center;
   }
