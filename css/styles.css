@@ -39,7 +39,7 @@ body {
   color:#f1fcf6;
 }
 
-#buttons {
+.buttons {
     max-height: 15vh;
     flex-grow: 2;
     float: right;
@@ -121,13 +121,13 @@ body {
   }
 
   @font-face { font-family: Abel; src: url('../fonts/abel-regular-webfont.woff'); }
-  .Abel { font-family: Abel; font-size: 2em;} 
+  .Abel { font-family: Abel; color: #f1fcf6;} 
 
   @font-face { font-family: AlexBrush; src: url('../fonts/AlexBrush-Regular.ttf'); }
   .AlexBrush { font-family: AlexBrush; color: #f1fcf6;} 
 
   @font-face { font-family: Aaargh; src: url('../fonts/Aaargh-webfont.woff'); }
-  .Argh {font-family: Aaargh; color: #f1fcf6}
+  .Argh {font-family: Aaargh; color: #f1fcf6; text-decoration: none;}
 
   .aboutme-title {
     font-size: 5vh;
@@ -137,4 +137,15 @@ body {
     font-size: 2.5vh;
     color: #f1fcf6;
     text-align: center;
+  }
+
+  .aboutme-logo {
+    max-width: 15vw;
+    max-height: 20vh;
+    overflow:hidden;
+  }
+
+  .contact-icons {
+    max-width: 20vw;
+    max-height: 20vh;
   }
